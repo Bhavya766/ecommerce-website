@@ -22,11 +22,6 @@ export default {
       type: "string",
     },
     {
-      name: "desc",
-      title: "Desc",
-      type: "string",
-    },
-    {
       name: "smallText",
       title: "SmallText",
       type: "string",

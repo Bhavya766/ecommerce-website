@@ -19,12 +19,19 @@ const FooterBanner = ({
 }) => {
   return (
     <div className="footer-banner-container">
-      <div className="banner-desc">
+      <p className="discount">{discount} discount on all products</p>
+      <p className="discount sale-time">{saleTime}</p>
+      <div className="banner-desc flex">
         <div className="left">
-          <p>{discount}</p>
-          <h3>{largeText1}</h3>
+          <h3>{largeText1},</h3>
           <h3>{largeText2}</h3>
-          <p>{saleTime}</p>
+        </div>
+        <div>
+          <img
+            src={urlFor(image)}
+            alt="banner-image"
+            className="footer-banner-image"
+          ></img>
         </div>
         <div className="right">
           <p>{smallText}</p>
@@ -34,11 +41,6 @@ const FooterBanner = ({
             <button type="button">{buttonText}</button>
           </Link>
         </div>
-        <img
-          src={urlFor(image)}
-          alt="banner-image"
-          className="footer-banner-image"
-        ></img>
       </div>
     </div>
   );
